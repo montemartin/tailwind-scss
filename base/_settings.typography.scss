@@ -1,0 +1,100 @@
+//==========  Typography ==========//
+$font-base: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+@mixin type-headline-lg {
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 0.025em;
+  line-height: 1.25;
+  @screen md {
+    font-size: 48px;
+  }
+  @screen lg {
+    font-size: 54px;
+  }
+}
+
+@mixin type-headline-md {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  @screen md {
+    font-size: 26px;
+  }
+  @screen lg {
+    font-size: 28px;
+  }
+}
+
+@mixin type-headline-sm {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 20px;
+  }
+}
+
+@mixin type-base {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 18px;
+  }
+}
+
+@mixin type-accent-huge {
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  @screen md {
+    font-size: 120px;
+  }
+}
+
+@mixin type-accent-lg {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  @screen md {
+    font-size: 22px;
+  }
+  @screen lg {
+    font-size: 24px;
+  }
+}
+
+@mixin type-accent-md {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  @screen md {
+    font-size: 17px;
+  }
+  @screen lg {
+    font-size: 18px;
+  }
+}
+
+@mixin type-accent-sm {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+@mixin type-accent-tiny {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}

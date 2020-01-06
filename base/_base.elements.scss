@@ -1,0 +1,45 @@
+html,
+body {
+  overflow-x: hidden;
+  // scroll-behavior: smooth;
+}
+
+main {
+  @apply relative bg-white;
+  z-index: 99;
+}
+
+header,
+section,
+footer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  @screen md {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+}
+
+a {
+  &:hover {
+  }
+}
+
+button {
+  &:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+:focus {
+  outline: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+body:not(.keyboard--active) button:focus,
+body:not(.keyboard--active) input:focus,
+body:not(.keyboard--active) select:focus,
+body:not(.keyboard--active) a:focus,
+body:not(.keyboard--active) textarea:focus {
+  outline: none;
+}
